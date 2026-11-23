@@ -1,4 +1,6 @@
 
+import "./SearchBar.css";
+
 function SearchBar({
   searchText,
   setSearchText,
@@ -19,7 +21,7 @@ function SearchBar({
         onChange={(e) => setSearchText(e.target.value)}
       />
 
-      {/* Category filter */}
+      {/* Category dropdown */}
       <select
         value={category}
         onChange={(e) => setCategory(e.target.value)}
@@ -31,7 +33,7 @@ function SearchBar({
         <option value="Accessories">Accessories</option>
       </select>
 
-      {/* Price sorting */}
+      {/* Sorting dropdown */}
       <select
         value={sortOrder}
         onChange={(e) => setSortOrder(e.target.value)}
@@ -41,7 +43,7 @@ function SearchBar({
         <option value="high-to-low">Price: High to Low</option>
       </select>
 
-      {/* Clear filters */}
+      {/* Clear button */}
       <button onClick={onClearFilters}>
         Clear Filters
       </button>
