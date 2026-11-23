@@ -1,12 +1,11 @@
 
-/* Main application */
 .app {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px 20px;
 }
 
-/* Application header */
+/* Header */
 header {
   text-align: center;
   margin-bottom: 30px;
@@ -29,12 +28,19 @@ header p {
   border: 1px solid #bfdbfe;
   border-radius: 10px;
   padding: 15px 20px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   color: #1e40af;
 }
 
 .cart-message p {
   margin: 0;
+}
+
+/* Product count */
+.result-count {
+  margin-bottom: 18px;
+  color: #4b5563;
+  font-size: 14px;
 }
 
 /* Product grid */
@@ -64,6 +70,24 @@ header p {
   color: #92400e;
 }
 
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+}
+
+.empty-state h2 {
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: #777;
+}
+
 /* Responsive layout */
 @media (max-width: 900px) {
   .product-grid {
@@ -78,5 +102,9 @@ header p {
 
   header h1 {
     font-size: 26px;
+  }
+
+  .app {
+    padding: 20px 15px;
   }
 }
