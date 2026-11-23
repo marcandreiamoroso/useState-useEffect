@@ -1,3 +1,4 @@
+
 import "./ProductCard.css";
 
 function ProductCard({
@@ -6,21 +7,20 @@ function ProductCard({
   category = "General",
   inStock,
   onAddToCart,
-  children,
+  children
 }) {
   return (
     <div className={`product-card ${!inStock ? "out-of-stock" : ""}`}>
+
       {children}
 
       <h2>{title}</h2>
-
       <p className="category">{category}</p>
 
       <h3>
-        ₱
-        {price.toLocaleString("en-PH", {
+        ₱{price.toLocaleString("en-PH", {
           minimumFractionDigits: 2,
-          maximumFractionDigits: 2,
+          maximumFractionDigits: 2
         })}
       </h3>
 
@@ -30,9 +30,13 @@ function ProductCard({
         <span className="stock unavailable">Out of Stock</span>
       )}
 
-      <button onClick={() => onAddToCart(title)} disabled={!inStock}>
+      <button
+        onClick={() => onAddToCart(title)}
+        disabled={!inStock}
+      >
         Add to Cart
       </button>
+
     </div>
   );
 }
