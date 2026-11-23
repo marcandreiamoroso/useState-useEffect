@@ -1,0 +1,82 @@
+
+/* Main application */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Application header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 32px;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #777;
+  font-size: 15px;
+}
+
+/* Cart message */
+.cart-message {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  color: #1e40af;
+}
+
+.cart-message p {
+  margin: 0;
+}
+
+/* Product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Product badges */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.new-badge {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.sale-badge {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+}
